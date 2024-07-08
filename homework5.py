@@ -6,6 +6,10 @@ immutable_var[3].insert(0, "Четверг")
 immutable_var[3].insert(0, "Понедельник")
 immutable_var[3].insert(1, "Вторник")
 immutable_var[3].insert(2, "Среда")
+try:
+    immutable_var[1] = 0
+except TypeError:
+    print("Нельзя изменить значение элемента в неизменяемом объекте")
 
 print(immutable_var)
 
